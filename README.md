@@ -37,7 +37,6 @@ Here's a walkthrough of implemented user stories:
 
 <img src="ezgif.com-gif-maker.gif" width=250><br>
 
-GIF created with [Kap](https://getkap.co/).
 
 ## Notes
 
