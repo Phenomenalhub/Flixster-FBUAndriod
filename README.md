@@ -29,6 +29,9 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+<img src="ezgif.com-gif-maker (1).gif" width=250><br>
+
+
 <img src="ezgif.com-gif-maker.gif" width=250><br>
 
 GIF created with [Kap](https://getkap.co/).
