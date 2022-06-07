@@ -11,6 +11,7 @@ import com.example.flixsterfbuandriod.models.Movie;
 
 import org.parceler.Parcels;
 
+//public class YOUTUBE_API_KEY = "AIzaSyCftlyNRxYrXWT1SrdqpirS8yIwqp4Wtio"
 public class DetailActivity extends AppCompatActivity {
     Movie movie;
     TextView tvTitle;

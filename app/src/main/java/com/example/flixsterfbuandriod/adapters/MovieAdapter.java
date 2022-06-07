@@ -123,11 +123,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 context.startActivity(intent);
 
             }
-            /*
-            clMovie.setOnClickListener(){
-            ...
-            intent code
-            * */
     }
     }
 }
