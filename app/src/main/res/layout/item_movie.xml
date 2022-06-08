@@ -23,6 +23,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:ellipsize="end"
         android:maxLines="2"
         android:text="Fantastic Beasts: The Secrets of Dumbledore"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -36,7 +37,7 @@
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="238dp"
-        android:layout_height="190dp"
+        android:layout_height="185dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"

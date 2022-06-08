@@ -54,7 +54,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     }
 
     // Returns total items count in the list
-
     @Override
     public int getItemCount() {
         return movies.size();
@@ -65,7 +64,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         TextView tvTitle;
         TextView tvOverview;
         ImageView ivPoster;
-
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -82,32 +80,22 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             String imageUrl;
             int placeholder;
             // when phone is in landscape then imageUrl=backdrop image
-
             if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
                 imageUrl = movie.getBackdropPath();
                 placeholder = R.drawable.flicks_backdrop_placeholder;
-                //Glide.with(context).load(imageUrl).placeholder(R.drawable.flicks_backdrop_placeholder).into(ivPoster);
-                // .transform(new RoundedCorners(9)).
             } else {
                 imageUrl = movie.getPosterPath();
                 placeholder = R.drawable.flicks_movie_placeholder;
-                //Glide.with(context).load(imageUrl).placeholder(R.drawable.flicks_movie_placeholder). into(ivPoster);
-                // .transform(new RoundedCorners(9))
             }
             int radius = 300; // corner radius, higher value = more rounded
             RequestOptions requestOptions = new RequestOptions();
             requestOptions = requestOptions.transforms(new CenterCrop(), new RoundedCorners(30));
             Glide.with(context)
                     .load(imageUrl)
-                    //.transforms(new RoundedCorners(radius))
                     .apply(requestOptions)
                     .placeholder(placeholder)
-                    //.centerCrop()
                     .into(ivPoster );
-            //else imageUrl = posterimage
-
         }
-
         @Override
         public void onClick(View v) {
             int position = getAdapterPosition();
@@ -121,7 +109,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 intent.putExtra(Movie.class.getSimpleName(), Parcels.wrap(movie));
                 // show the activity
                 context.startActivity(intent);
-
             }
     }
     }
